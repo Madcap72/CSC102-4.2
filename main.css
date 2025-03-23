@@ -1,0 +1,45 @@
+body
+{
+     background-image: url(Shenaniganator.jpg) ;  
+     background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat; 
+     background-attachment: fixed;
+     color: rgb(238, 242, 244); 
+     font-family: sans-serif;
+     text-align: center;
+     height: 100vh;
+     display:flex;
+     flex-direction: column;
+
+}
+
+/*attempt to get my gui to match the theme.*/
+button
+{
+    display: inline-block; /*buttons were entire page with, this is the fix...I hope.*/
+    width: auto; /*what I was missing*/
+    max-width: 200px; /*the last two lines didn't quite get me there, so here's a shoehorn for it*/
+    background-color: yellow;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: 4px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Going for the comic look.*/
+} 
+
+/*for nothing other than nitpicking alignment.*/
+.button-Container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40%;
+    position: relative;
+    z-index: 10; /*who knew that buttons could be eaten by the background?*/
+}
